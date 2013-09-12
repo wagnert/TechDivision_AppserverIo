@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+{namespace typo3=TYPO3\Neos\ViewHelpers}
+{namespace ts=TYPO3\TypoScript\ViewHelpers}
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<f:base />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Default Template</title>
+
+<link rel="shortcut icon" href="../../../Public/Images/favicon.png">
+
+<f:section name="stylesheets">
+	<link rel="stylesheet" href="../../../Public/Stylesheets/styles.css"
+		media="all" />
+	<link rel="stylesheet"
+		href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+		media="all" />
+</f:section>
+
+</head>
+<body>
+	<f:section name="body">
+		<!--
+	<h1>A freshly created template for your new site!</h1>
+	<nav class="menu"><ts:render path="parts.menu" /></nav>
+	<nav class="breadcrumb"><ts:render path="parts.breadcrumb" /></nav>
+	<div class="content"><ts:render path="content.main" /></div>-->
+
+		<div class="navbar">
+			<div class="navbar-inner">
+				<ul class="nav">
+					<li><a href="index"> Home</a></li>
+					<li><a href="downloads"> Downloads</a></li>
+					<li><a
+						href="https://github.com/techdivision/TechDivision_ApplicationServer"><i
+							class="icon-github icon-large"></i> Fork me</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="jumbotron masthead">
+			<div class="container">
+				<p>&nbsp;</p>
+				<h1>
+					<img src="static/img/logo.png" /> appserver
+				</h1>
+				<p class="lead">Multithreaded application server for PHP,
+					written in PHP.</p>
+				<a id="download-link"
+					onclick="_gaq.push(['_trackEvent', 'Home', 'Downloaded', 'Package']);"
+					class="btn btn-primary btn-large"><i
+					class="icon-download icon-large"></i> install appserver </a>
+			</div>
+		</div>
+
+		<div class="container main">
+		
+			<ts:render path="content.main" />
+		
+			<!-- 
+			<div class="row-fluid">
+				<div class="span4">
+					<h2>
+						<i class="icon-thumbs-up"></i>&nbsp; Go for it!
+					</h2>
+					<ul class="icons-ul">
+					</ul>
+					<p>The project is focused on development of a multithreaded
+						application server for PHP, written in PHP. Written in PHP to
+						enable the collaboration of PHP community and to establish itself
+						as a standard solution for enterprise applications in the PHP
+						ecosystem.</p>
+				</div>
+				<div class="span4">
+					<h2>
+						<i class="icon-sun"></i>&nbsp; Highlights
+					</h2>
+					<ul class="icons-ul">
+						<li><i class="icon-li icon-ok"></i> Doctrine as standard
+							persistence provider</li>
+						<li><i class="icon-li icon-ok"></i> Session Beans (stateful,
+							stateless + singleton)</li>
+						<li><i class="icon-li icon-ok"></i> Message Beans</li>
+						<li><i class="icon-li icon-ok"></i> Timer Service (tbd)</li>
+						<li><i class="icon-li icon-ok"></i> Servlet Engine</li>
+						<li><i class="icon-li icon-ok"></i> Integrated Message Queue
+						</li>
+						<li><i class="icon-li icon-ok"></i> Easy scaling</li>
+						<li><i class="icon-li icon-ok"></i> Webservices</li>
+					</ul>
+					<p></p>
+				</div>
+				<div class="span4">
+					<h2>
+						<i class="icon-folder-close"></i>&nbsp; Requirements
+					</h2>
+					<ul class="icons-ul">
+						<li><i class="icon-li icon-ok"></i> PHP 5.4+ on x64 or x86</li>
+						<li><i class="icon-li icon-ok"></i> ZTS enabled (thread
+							safety)</li>
+						<li><i class="icon-li icon-ok"></i> POSIX threads
+							implementation</li>
+						<li><i class="icon-li icon-ok"></i> Memcached (2.1+)</li>
+					</ul>
+					<p>The actual version has been tested on Mac OS X 10.7+ and
+						Debian. On basis of the used components, however, on other
+						platforms the operation should also be possible.</p>
+				</div>
+			</div>
+
+			<div class="row-fluid marketing">
+				<div class="span6">
+					<h2>
+						<i class="icon-gamepad"></i>&nbsp; Keep it simple!
+					</h2>
+					<ul class="icons-ul">
+					</ul>
+					<p>The implementation of a web application and the operation in
+						the application server has to be as easy as possible. For this
+						purpose, whenever possible, already popular and proven components
+						will be used as standard solutions, for example Doctrine is the
+						standard persistence provider. Also configuration by exception to
+						start an application running is one the main paradigms. Keeping
+						this in mind, the minimal configuration effort fits to most of the
+						use cases. To enable collaboration of the PHP community the
+						standard servlets that will be delivered covers a wide range of
+						existing applications and frameworks. Additional development of
+						future feature rich web applications based on popular frameworks
+						will be supported with specific libraries and documentation.</p>
+				</div>
+				<div class="span6">
+					<h2>
+						<i class="icon-reorder"></i>&nbsp; Technical Features
+					</h2>
+					<ul class="icons-ul">
+						<li><i class="icon-li icon-ok"></i> Usage of the phtreads
+							PECL extension of Joe Watkins
+							(https://github.com/krakjoe/pthreads)</li>
+						<li><i class="icon-li icon-ok"></i> Supports usage of DI
+							&amp; AOP inside containers (tdb)</li>
+						<li><i class="icon-li icon-ok"></i> Supports annotations to
+							configure beans (tbd)</li>
+						<li><i class="icon-li icon-ok"></i> Configration by
+							exception, optional usage of deployment descriptors (tbd)</li>
+					</ul>
+					<p></p>
+				</div>
+				-->
+				
+				
+			</div>
+
+			<div class="footer">
+				<ul class="nav nav-pills pull-right">
+					<li><a href="index"> Home</a></li>
+					<li><a href="downloads"> Downloads</a></li>
+					<li><a
+						href="https://github.com/techdivision/TechDivision_ApplicationServer"><i
+							class="icon-github"></i> Fork me</a></li>
+					<li><a href="https://twitter.com/php_appserver"><i
+							class="icon-twitter"></i> @php_appserver</a></li>
+					<li><a href="imprint"> Imprint</a></li>
+					<li class="disabled"><a href="http://www.techdivision.com">&copy;
+							TechDivision GmbH</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<f:section name="scripts">
+			<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+			<script src="../../../Public/JavaScript/site.js"></script>
+			<!--[if lt IE 9]><script src="../../../Public/JavaScript/html5shiv.js"></script><![endif]-->
+		</f:section>
+
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push([ '_setAccount', 'UA-42386171-1' ]);
+			_gaq.push([ '_trackPageview' ]);
+			(function() {
+				var ga = document.createElement('script');
+				ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+						: 'http://www')
+						+ '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+
+	</f:section>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<site nodeName="io">
+		<properties>
+			<name>appserver.io</name>
+			<state>1</state>
+			<siteResourcesPackageKey>appserver.io</siteResourcesPackageKey>
+		</properties>
+		<node identifier="" type="TYPO3.Neos:Page" nodeName="homepage" locale="en_EN">
+			<properties>
+				<title>Home</title>
+			</properties>
+		</node>
+	</site>
+</root>
