@@ -1,4 +1,4 @@
 {namespace neos=TYPO3\Neos\ViewHelpers}
 <neos:contentElement node="{node}">
-	<i class="{iconClass}"></i><neos:contentElement.editable property="title">{title -> f:format.raw()}</neos:contentElement.editable>
+	<h2><i class="{iconClass}"></i> <neos:contentElement.editable property="title" tag="span">{title -> f:format.raw()}</neos:contentElement.editable></h2>
 </neos:contentElement>
