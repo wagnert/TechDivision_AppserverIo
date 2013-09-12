@@ -41,6 +41,48 @@ prototype(TYPO3.Neos.NodeTypes:MultiColumn) {
     templatePath = 'resource://appserver.io/Private/Templates/TypoScriptObjects/MultiColumn.html'
 }
 
-prototype(TYPO3.Neos.NodeTypes:MultiColumnItem) {
-    templatePath = 'resource://appserver.io/Private/Templates/TypoScriptObjects/MultiColumnItem.html'
+
+prototype(appserver.io:MultiColumnItemSpan6) < prototype(TYPO3.Neos.NodeTypes:MultiColumnItem) {
+    templatePath = 'resource://appserver.io/Private/Templates/TypoScriptObjects/MultiColumnItemSpan6.html'
+}
+
+prototype(appserver.io:MultiColumnItemSpan4) < prototype(TYPO3.Neos.NodeTypes:MultiColumnItem) {
+    templatePath = 'resource://appserver.io/Private/Templates/TypoScriptObjects/MultiColumnItemSpan4.html'
+}
+
+prototype(appserver.io:MultiColumnItemSpan3) < prototype(TYPO3.Neos.NodeTypes:MultiColumnItem) {
+    templatePath = 'resource://appserver.io/Private/Templates/TypoScriptObjects/MultiColumnItemSpan3.html'
+}
+
+prototype(TYPO3.Neos.NodeTypes:TwoColumn) < prototype(TYPO3.Neos:Template)
+prototype(TYPO3.Neos.NodeTypes:TwoColumn) {
+    templatePath = 'resource://appserver.io/Private/Templates/TypoScriptObjects/MultiColumn.html'
+    columns = TYPO3.TypoScript:Collection
+    columns {
+        collection = ${q(node).children('[instanceof TYPO3.Neos:ContentCollection]')}
+        itemRenderer = appserver.io:MultiColumnItemSpan6
+        itemName = 'node'
+    }
+}
+
+prototype(TYPO3.Neos.NodeTypes:ThreeColumn) < prototype(TYPO3.Neos:Template)
+prototype(TYPO3.Neos.NodeTypes:ThreeColumn) {
+    templatePath = 'resource://appserver.io/Private/Templates/TypoScriptObjects/MultiColumn.html'
+    columns = TYPO3.TypoScript:Collection
+    columns {
+        collection = ${q(node).children('[instanceof TYPO3.Neos:ContentCollection]')}
+        itemRenderer = appserver.io:MultiColumnItemSpan4
+        itemName = 'node'
+    }
+}
+
+prototype(TYPO3.Neos.NodeTypes:FourColumn) < prototype(TYPO3.Neos:Template)
+prototype(TYPO3.Neos.NodeTypes:FourColumn) {
+    templatePath = 'resource://appserver.io/Private/Templates/TypoScriptObjects/MultiColumn.html'
+    columns = TYPO3.TypoScript:Collection
+    columns {
+        collection = ${q(node).children('[instanceof TYPO3.Neos:ContentCollection]')}
+        itemRenderer = appserver.io:MultiColumnItemSpan3
+        itemName = 'node'
+    }
 }
