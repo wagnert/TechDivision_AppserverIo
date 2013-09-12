@@ -33,3 +33,14 @@ page.body {
 		main.nodePath = 'main'
 	}
 }
+
+/**
+ * Override columns templates
+ */
+prototype(TYPO3.Neos.NodeTypes:MultiColumn) {
+    templatePath = 'resource://appserver.io/Private/Templates/TypoScriptObjects/MultiColumn.html'
+}
+
+prototype(TYPO3.Neos.NodeTypes:MultiColumnItem) {
+    templatePath = 'resource://appserver.io/Private/Templates/TypoScriptObjects/MultiColumnItem.html'
+}
