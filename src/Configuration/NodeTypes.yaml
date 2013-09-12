@@ -1,0 +1,24 @@
+'appserver.io:HeadlineWithIcon':
+  superTypes: ['TYPO3.Neos:Content']
+  ui:
+    label: 'Headline with icon'
+    icon: 'icon-file-text'
+    inspector:
+      groups:
+        iconHeadline:
+          label: 'Icon Headline'
+          position: 5
+  properties:
+    title:
+      type: string
+      defaultValue: 'Enter headline here'
+      ui:
+        inlineEditable: TRUE
+    iconClass:
+      type: string
+      defaultValue: 'icon-thumbs-up'
+      ui:
+        label: 'Icon class'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'iconHeadline'

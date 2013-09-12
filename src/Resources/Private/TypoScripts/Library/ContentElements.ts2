@@ -1,0 +1,7 @@
+# Headline with icon TS Object
+prototype(appserver.io:HeadlineWithIcon) < prototype(TYPO3.Neos.NodeTypes:Headline)
+prototype(appserver.io:HeadlineWithIcon) {
+	templatePath = 'resource://appserver.io/Private/Templates/TypoScriptObjects/HeadlineWithIcon.html'
+	title = ${q(node).property('title')}
+	iconClass = ${q(node).property('iconClass')}
+}
