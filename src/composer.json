@@ -1,0 +1,14 @@
+{
+	"name": "appserver\/io",
+	"type": "typo3-flow-site",
+	"description": "appserver.io website",
+    "license": "GPL-3.0+",
+	"require":{
+        "typo3\/neos": "*"
+	},
+	"autoload":{
+		"psr-0":{
+			"appserver\\io": "Classes"
+		}
+	}
+}

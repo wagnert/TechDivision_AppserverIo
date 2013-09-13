@@ -25,6 +25,11 @@ page.body {
 	sectionName = 'body'
 	parts {
 		menu = Menu
+		menu {
+			entryLevel = 1
+			templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/MainMenu.html'
+			maximumLevels = 2
+		}
 		breadcrumb =  Breadcrumb
 	}
 		// These are your content areas, you can define as many as you want, just name them and the nodePath.
