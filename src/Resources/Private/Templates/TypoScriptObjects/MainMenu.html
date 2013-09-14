@@ -3,7 +3,7 @@
 <f:section name="itemList">
 	<ul class="nav">
 		<f:for each="{items}" as="item" iteration="menuItemIterator">
-			<li class="{item.state}{f:if(condition: menuItemIterator.isLast, then: ' last')}">
+			<li class="{item.state}">
 				<neos:link.node node="{item.node}">{item.label}</neos:link.node>
 				<f:if condition="{menuItemIterator.isLast}">
 					<f:else>
@@ -14,6 +14,9 @@
 				</f:if>
 			</li>
 		</f:for>
+		<li class="normal last">
+		  <a href="https://github.com/techdivision/TechDivision_ApplicationServer"><i class="icon-github icon-large"></i> Fork me</a>
+		</li>
 	</ul>
 </f:section>
 
